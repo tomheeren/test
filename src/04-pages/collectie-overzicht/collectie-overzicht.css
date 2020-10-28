@@ -1,0 +1,16 @@
+.collectie-overzicht {
+
+    & ul {
+        display: flex;
+        list-style-type: none;
+        min-height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & li {
+            font-size: 32px;
+            margin: 12px 0;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.module-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+
+    & .content {
+        text-align: center;
+        max-width: 1000px;
+        color: var(--color-primary-offset);
+        padding: 40px;
+
+        & .button.alt {
+            
+            &:hover {
+                background-color: var(--color-secondary-offset);
+                color: var(--color-secondary);
+                border: 2px solid var(--color-secondary-offset);
+            }
+        }
+    }
+}

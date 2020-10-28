@@ -1,0 +1,36 @@
+.module-tabs {
+    /* Style the tab */
+    & .tab {
+        overflow: hidden;
+        background-color: var(--color-gray-light);
+        
+        & button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: .3s;
+            font-weight: bold;
+        
+            &:hover {
+                background-color: var(--color-secondary);
+                color: var(--color-secondary-offset);
+            }
+
+            &.active {
+                background-color: var(--color-primary);
+                color: var(--color-primary-offset);
+            }
+        }
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid var(--color-gray-light);
+        border-top: none;
+    }
+}

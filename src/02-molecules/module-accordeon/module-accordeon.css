@@ -1,0 +1,46 @@
+.module-accordeon {
+
+    .accordion {
+        background-color: var(--color-gray-light);
+        color: var(--color-secondary);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        font-weight: bold;
+
+        &:hover,
+        &.active {
+            background-color: var(--color-primary);
+            color: var(--color-primary-offset);
+        }
+
+        &:after {
+            content: '\002B';
+            color: var(--color-secondary);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        &:hover:after {
+            color: var(--color-primary-offset);
+        }
+
+        &.active:after {
+            content: "\2212";
+            color: var(--color-primary-offset);
+        }
+    }
+        
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+}

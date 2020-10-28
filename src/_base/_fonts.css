@@ -1,0 +1,73 @@
+/**
+ * Fonts
+ */
+
+ @font-face {
+    font-family: 'Big Caslon';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/BigCaslon-Medium.woff2') format('woff2'),
+        url('/dist/fonts/BigCaslon-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-Book.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-BookOblique.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-BookOblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-Roman.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-Roman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-Oblique.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-Oblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-Black.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: 
+        url('/dist/fonts/Avenir-BlackOblique.woff2') format('woff2'),
+        url('/dist/fonts/Avenir-BlackOblique.woff') format('woff');
+}

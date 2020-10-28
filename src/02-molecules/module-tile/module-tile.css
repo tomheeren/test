@@ -1,0 +1,68 @@
+.module-tile {
+    margin-bottom: 30px;
+
+    & a {
+        color: inherit;
+        text-decoration: inherit;
+    
+        & .content {
+            background-color: var(--color-gray-light);
+
+            & figure {
+                overflow: hidden;
+
+                & img {
+                    transition: .2s ease-in;
+                }
+            }
+    
+            & .wrap {
+                padding: 40px;
+    
+                & h2 {
+                    margin: 0;
+                    font-size: 1.3em;
+                    color: var(--color-secondary);
+                }
+    
+                & p {
+                    margin: 8px 0;
+                }
+    
+                & span {
+                    margin: 16px 0 0;
+                    display: inline-block;
+                    color: var(--color-primary);
+    
+                    & i {
+                        margin-left: 8px;
+                        transition: .2s ease-in;
+                    }
+
+                    &:hover {
+
+                        & i {
+                            margin-left: 12px;
+                            transition: .2s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            
+            & .content {
+    
+                & figure {
+                    overflow: hidden;
+
+                    & img {
+                        transform: scale(1.05);
+                        transition: .2s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}

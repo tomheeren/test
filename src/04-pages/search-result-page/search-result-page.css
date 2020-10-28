@@ -1,0 +1,30 @@
+
+
+.srp-head {
+
+    & .srp-input {
+        background-image: url('/dist/images/searchicon.png');
+        background-position: 14px 16px;
+        background-repeat: no-repeat;
+        width: 100%;
+        /* font-size: 16px; */
+        line-height: 1.7;
+        padding: 12px 20px 12px 46px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    & .srp-submit {
+        padding: 14px 30px;
+        width: auto;
+    }
+
+    & .divider {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        border: .5px solid var(--color-gray);
+    }
+}

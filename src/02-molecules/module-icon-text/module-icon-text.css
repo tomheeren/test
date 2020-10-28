@@ -1,0 +1,7 @@
+.module-icon-text {
+
+    & img {
+        width: 50%;
+        max-width: 220px;
+    }
+}

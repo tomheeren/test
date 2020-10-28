@@ -1,0 +1,66 @@
+.button {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-primary-offset);
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: .2s ease-in;
+    border: 2px solid var(--color-primary);
+    /* border-radius: 5px; */
+    margin: 8px 12px 8px 0;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-secondary);
+        color: var(--color-secondary-offset);
+        border: 2px solid var(--color-secondary);
+        transition: .2s ease-in;
+    }
+
+    &--alt {
+        background-color: var(--color-secondary);
+        color: var(--color-secondary-offset);
+        border: 2px solid var(--color-secondary);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-primary);
+            color: var(--color-primary-offset);
+            border: 2px solid var(--color-primary);
+        }
+    }
+
+    &--border {
+        background-color: var(--color-secondary);
+        color: var(--color-secondary-offset);
+        border: 2px solid var(--color-primary);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-primary);
+            color: var(--color-primary-offset);
+            border: 2px solid var(--color-primary);
+        }
+    }
+
+    &--white {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+        border: 2px solid var(--color-white);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-primary);
+            color: var(--color-primary-offset);
+            border: 2px solid var(--color-primary);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.module-foto-carrousel {
+    
+    & .foto-carousel {
+
+        & .carousel-cell {
+            width: 80%;
+            padding: 0 8px;
+        }
+    }
+
+    .flickity-prev-next-button {
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.4);
+        
+        & .arrow {
+            fill: white;
+        }
+
+        &.no-svg {
+            color: white;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        &:disabled {
+            display: none;
+        }
+    }
+    
+    .flickity-page-dots {
+        bottom: 10px;
+
+        & .dot {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+            background: transparent;
+            border: 1px solid white;
+
+            &.is-selected {
+                background: white;
+            }
+        }
+    }
+
+    .flickity-viewport {
+        transition: height .4s;
+    }
+}

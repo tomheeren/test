@@ -1,0 +1,30 @@
+.collectie-tile {
+    margin-bottom: 40px;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+
+            & figure img {
+                transform: scale(1.1);
+            }
+        }
+
+        & figure {
+            overflow: hidden;
+
+            & img {
+                transition: .2s;
+            }
+        }
+
+        & .content {
+    
+            & h2 {
+    
+            }
+        }
+    }
+}
