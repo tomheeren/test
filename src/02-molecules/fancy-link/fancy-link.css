@@ -1,0 +1,28 @@
+.fancy-link {
+    color: var(--color-orange);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &:hover {
+        color: var(--color-orange);
+
+        & .fancy-arrow {
+            transform: translateX(10px);
+        }
+    }
+
+    & .fancy-arrow {
+        display: inline-block;
+        transition: .3s;
+
+        & svg {
+            height: 12px;
+            width: 44px;
+
+            & path {
+                fill: var(--color-orange);
+            }
+        }
+    }
+}

@@ -106,3 +106,23 @@ if (heroLength.length > 0) {
     overflow: true,
   });
 }
+
+// Jess Design slider
+const flkty = new Flickity('.js-carousel', {
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  pageDots: false,
+  prevNextButtons: false,
+  imagesLoaded: true,
+});
+
+const previousButton = document.querySelector('.js-button--previous');
+previousButton.addEventListener('click', () => {
+  flkty.previous();
+});
+
+const nextButton = document.querySelector('.js-button--next');
+nextButton.addEventListener('click', () => {
+  flkty.next();
+});

@@ -16,7 +16,7 @@
             overflow: hidden;
 
             & img {
-                transition: .2s;
+                transition: 1s;
             }
         }
 

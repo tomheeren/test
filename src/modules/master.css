@@ -9,7 +9,9 @@
 @import '../01-atoms/form-input/form-input.css';
 
 /* Molecules */
+@import '../02-molecules/blog-tile/blog-tile.css';
 @import '../02-molecules/collectie-tile/collectie-tile.css';
+@import '../02-molecules/fancy-link/fancy-link.css';
 
 @import '../02-molecules/module-accordeon/module-accordeon.css';
 @import '../02-molecules/module-button/module-button.css';
@@ -32,6 +34,10 @@
 @import '../03-organisms/section-hero/section-hero.css';
 @import '../03-organisms/section-page-title/section-page-title.css';
 @import '../03-organisms/image-text/image-text.css';
+@import '../03-organisms/ar-section-home/ar-section-home.css';
+@import '../03-organisms/jess-slider/jess-slider.css';
+@import '../03-organisms/home-projecten-showcase/home-projecten-showcase.css';
+@import '../03-organisms/cta-big/cta-big.css';
 
 /* Pages */
 @import '../04-pages/collectie-overzicht/collectie-overzicht.css';

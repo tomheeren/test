@@ -1,0 +1,114 @@
+.home-projecten-showcase {
+
+    & .wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        & .images {
+            position: relative;
+
+            & .hps-image {
+                padding: 4px;
+
+                & .hps-image-zoom-fix {
+                    overflow: hidden;
+        
+                    & img {
+                        display: block;
+                        width: 100%;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            & .hps-images-top {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                margin-left: 15%;
+
+                & .hps-image-1 {
+                    width: 30%;
+                }
+
+                & .hps-image-2 {
+                    width: 40%;
+                }
+            }
+
+            & .hps-images-bottom {
+                display: flex;
+                flex-direction: row;
+
+                & .hps-images-left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    & .hps-image-3 {
+                        width: 100%;
+                    }
+    
+                    & .hps-image-4 {
+                        width: 50%;
+                    }
+                }
+    
+                & .hps-images-right {
+
+                    & .hps-image-5 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        & .content {
+
+        }
+    }
+}
+
+@media (--viewport-md-min) {
+    .home-projecten-showcase {
+
+        & .wrap {
+            flex-direction: row;
+    
+            & .images {
+                width: 50%;
+    
+                & .hps-image {
+                    padding: 6px;
+    
+                    & .hps-image-zoom-fix {
+    
+                        &:hover img {
+                            transform: scale(1.1)
+                        }
+                    }
+                }
+            }
+    
+            & .content {
+                width: 50%;
+                padding: 20px 40px 20px 60px;
+    
+            }
+        }
+    }
+}
+
+@media (--viewport-lg-min) {
+    .home-projecten-showcase {
+
+        & .wrap {
+    
+            & .content {
+                padding: 20px 40px 20px 160px;
+    
+            }
+        }
+    }
+}
