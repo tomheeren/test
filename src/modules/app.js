@@ -1,21 +1,29 @@
 // This is the global JS file that will be accessible from any component
 
 // Header
-const headerLength = document.querySelectorAll('.header');
+const headerLength = document.querySelectorAll('.header-hamburger');
 
 if (headerLength.length > 0) {
-  const btnOpenNavbar = document.getElementById('hamburger');
-  const navbarMobile = document.getElementsByClassName('header-links')[0];
-  const hamburger = document.getElementById('hamburger-icon');
-  const headerFix = document.querySelectorAll('.header-fix')[0];
+  let x = true;
+  const hamburger = headerLength[0];
+  const headerNav = document.querySelector('.header-nav');
+  const body = document.querySelector('body');
 
-  btnOpenNavbar.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navbarMobile.classList.toggle('open');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    // headerNav.classList.toggle('is-active');
+    body.classList.toggle('is-active');
+
+    if (x) {
+      headerNav.classList.add('menu-open');
+      headerNav.classList.remove('menu-closed');
+      x = false;
+    } else {
+      headerNav.classList.remove('menu-open');
+      headerNav.classList.add('menu-closed');
+      x = true;
+    }
   });
-
-  // set header fix same height as header bar
-  headerFix.style.height = `${headerLength[0].offsetHeight}px`;
 }
 
 // Tab
@@ -107,22 +115,70 @@ if (heroLength.length > 0) {
   });
 }
 
+
 // Jess Design slider
-const flkty = new Flickity('.js-carousel', {
-  // options
-  cellAlign: 'left',
-  wrapAround: true,
-  pageDots: false,
-  prevNextButtons: false,
-  imagesLoaded: true,
-});
+const jessSliderLength = document.querySelectorAll('.jess-slider');
 
-const previousButton = document.querySelector('.js-button--previous');
-previousButton.addEventListener('click', () => {
-  flkty.previous();
-});
+if (jessSliderLength.length > 0) {
+  for (let i = 0; i < jessSliderLength.length; i++) {
+    const element = jessSliderLength[i];
+    const sliderJess = element.querySelector('.js-carousel');
 
-const nextButton = document.querySelector('.js-button--next');
-nextButton.addEventListener('click', () => {
-  flkty.next();
-});
+    const flkty = new Flickity(sliderJess, {
+      // options
+      cellAlign: 'left',
+      wrapAround: true,
+      pageDots: false,
+      prevNextButtons: false,
+      imagesLoaded: true,
+    });
+
+    const previousButton = element.querySelector('.js-button--previous');
+    previousButton.addEventListener('click', () => {
+      flkty.previous();
+    });
+
+    const nextButton = element.querySelector('.js-button--next');
+    nextButton.addEventListener('click', () => {
+      flkty.next();
+    });
+  }
+}
+
+// collectie overzicht
+const headerBackgroundHoverImages = document.querySelectorAll('.navigation-links');
+
+if (headerBackgroundHoverImages.length > 0) {
+  const links = headerBackgroundHoverImages[0].querySelectorAll('li');
+  const hoverImages = document.querySelector('.hover-images');
+
+  for (let i = 0; i < links.length; i++) {
+    const element = links[i];
+    const img = element.querySelector('.navBackImage');
+    hoverImages.appendChild(img);
+  }
+
+  const hoverLinks = document.querySelectorAll('.navigation-links li');
+
+  for (let x = 0; x < hoverLinks.length; x++) {
+    hoverLinks[x].addEventListener('mouseover', () => {
+      hoverImages.querySelectorAll('.navBackImage')[x].classList.add('is-active');
+    });
+
+    hoverLinks[x].addEventListener('mouseout', () => {
+      hoverImages.querySelectorAll('.navBackImage')[x].classList.remove('is-active');
+    });
+  }
+}
+
+
+// Collectie overzicht dropdown (dropdown-menu)
+const dropdownMenuLength = document.querySelectorAll('.dropdown-menu');
+
+if (dropdownMenuLength.length > 0) {
+  const dropbtn = dropdownMenuLength[0].querySelector('.dropbtn');
+
+  dropbtn.addEventListener('click', () => {
+    dropdownMenuLength[0].classList.toggle('is-active');
+  });
+}

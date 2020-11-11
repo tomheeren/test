@@ -12,12 +12,13 @@
     {{!-- Styles --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
     <link rel="stylesheet" href="https://www.unpkg.com/flickity@2.2.1/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link media="all" rel="stylesheet" href="{{ path '/dist/css/master.min.css' }}" />  
     <title>{{ _target.title }}</title>
 </head>
 
-<body id="site">
+<body id="site" class="">
     {{{ yield }}}
 
     <script
@@ -26,6 +27,7 @@
         crossorigin="anonymous">
     </script>
     <script src="https://www.unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

@@ -3,6 +3,14 @@
     background-color: var(--color-light-green);
     padding: 60px 0 40px;
 
+    &.js-background-white {
+        background-color: var(--color-white);
+    }
+
+    &.js-background-gray {
+        background-color: var(--color-light-gray);
+    }
+
     & .js-wrap {
         display: flex;
         flex-direction: column;

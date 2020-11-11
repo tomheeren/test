@@ -1,21 +1,23 @@
 .module-accordeon {
 
     .accordion {
-        background-color: var(--color-gray-light);
-        color: var(--color-secondary);
+        /* background-color: var(--color-gray-light); */
+        background-color: transparent;
+        color: var(--color-jess-black);
+        font-family: var(--base-font-family);
         cursor: pointer;
-        padding: 18px;
+        padding: 18px 0;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
         transition: 0.4s;
-        font-weight: bold;
+        /* font-weight: bold; */
 
         &:hover,
         &.active {
-            background-color: var(--color-primary);
-            color: var(--color-primary-offset);
+            /* background-color: var(--color-primary); */
+            /* color: var(--color-primary-offset); */
         }
 
         &:after {
@@ -27,20 +29,21 @@
         }
 
         &:hover:after {
-            color: var(--color-primary-offset);
+            /* color: var(--color-primary-offset); */
         }
 
         &.active:after {
             content: "\2212";
-            color: var(--color-primary-offset);
+            /* color: var(--color-primary-offset); */
         }
     }
         
     .panel {
         padding: 0 18px;
-        background-color: white;
+        /* background-color: white; */
         max-height: 0;
         overflow: hidden;
+        border-bottom: solid 1px var(--color-jess-black);
         transition: max-height 0.2s ease-out;
     }
 }

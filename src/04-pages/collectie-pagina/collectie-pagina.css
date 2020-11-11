@@ -1,2 +1,21 @@
-.collectie-pagina {
+.collectie-pagina-overzicht {
+    position: relative;
+    margin-top: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        height: 300px;
+        background-color: var(--color-light-green);
+    }
+
+    & .wrap {
+        position: relative;
+        z-index: 2;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
 }
