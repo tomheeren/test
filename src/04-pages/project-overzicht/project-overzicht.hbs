@@ -1,0 +1,95 @@
+{{render '@header'}}
+
+{{render '@page-hero'}}
+
+<section class="project-pagina-overzicht">
+    <div class="container">
+        <div class="wrap">
+            <div class="pp-menu">
+                {{!-- {{render '@dropdown-menu'}} --}}
+                <div class="dropdown-menu">
+                    <a class="dropbtn">
+                        Alle projecten
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="javascript:void(0);" class="active">Alle projecten</a>
+                        <a href="javascript:void(0);">Restaurant</a>
+                        <a href="javascript:void(0);">Hotel</a>
+                        <a href="javascript:void(0);">Office</a>
+                        <a href="javascript:void(0);">Home</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    {{!-- {{render '@collectie-tile'}} --}}
+                    <div class="collectie-tile">
+                        <a href="javascript:void(0);">
+                            <div class="content">
+                                <figure>
+                                    <img src="https://via.placeholder.com/800x800" alt="alt foto">
+                                </figure>
+                                <div class="wrap">
+                                    <h2>
+                                        Titel
+                                    </h2>
+                                    <span class="sub-title">
+                                        Schaijk, Nederland
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    {{render '@collectie-tile'}}
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    {{render '@collectie-tile'}}
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    {{render '@collectie-tile'}}
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    {{render '@collectie-tile'}}
+                </div>
+            </div>
+            <div class="pp-pagination">
+                <ul class="pagination">
+                    <li>
+                        <a class="active" href="javascript:void(0);">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            4
+                        </a>
+                    </li>
+                    <li>
+                        <a class="disabled">
+                            ...
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            101
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{render '@footer'}}

@@ -41,9 +41,13 @@
 @import '../03-organisms/cta-big/cta-big.css';
 @import '../03-organisms/overzicht-page-title/overzicht-page-title.css';
 @import '../03-organisms/product-pagina-hero/product-pagina-hero.css';
+@import '../03-organisms/page-hero/page-hero.css';
 
 /* Pages */
 @import '../04-pages/collectie-overzicht/collectie-overzicht.css';
 @import '../04-pages/product-pagina/product-pagina.css';
 @import '../04-pages/search-result-page/search-result-page.css';
 @import '../04-pages/collectie-pagina/collectie-pagina.css';
+@import '../04-pages/project-overzicht/project-overzicht.css';
+@import '../04-pages/project-detail-pagina/project-detail-pagina.css';
+@import '../04-pages/blog-overzicht/blog-overzicht.css';

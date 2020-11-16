@@ -272,3 +272,52 @@ ul.list-check {
     }
 }
 
+/* pagination */
+.pagination {
+    list-style-type: none;
+    display: flex;
+    font-weight: 400;
+    padding: 0;
+
+    & li {
+        display: block;
+        padding: 0 4px;
+
+        & a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+            padding: 6px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: var(--color-jess-black);
+                width: 0;
+                height: 1px;
+                left: 50%;
+                bottom: -4px;
+                transform: translateX(-50%);
+                transition: .3s;
+            }
+
+            &.active,
+            &:hover {
+                &::after {
+                    width: 20px;
+                }
+            }
+
+            &.disabled {
+                cursor: default;
+                user-select: none;
+                
+                &:hover::after {
+                    width: 0px;
+                }
+            }
+        }
+    }
+}

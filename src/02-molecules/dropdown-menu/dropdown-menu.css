@@ -89,7 +89,7 @@
                 width: 0;
                 height: 1px;
                 left: 50%;
-                bottom: -3px;
+                bottom: -10px;
                 transform: translateX(-50%);
                 transition: .3s;
             }

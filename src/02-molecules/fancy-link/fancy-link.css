@@ -1,8 +1,10 @@
 .fancy-link {
+    display: inline-block;
     color: var(--color-orange);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 8px;
 
     &:hover {
         color: var(--color-orange);
@@ -23,6 +25,18 @@
             & path {
                 fill: var(--color-orange);
             }
+        }
+    }
+
+    &--black {
+        color: var(--color-jess-black);
+
+        &:hover {
+            color: var(--color-jess-black);
+        }
+
+        & .fancy-arrow svg path {
+            fill: var(--color-jess-black);
         }
     }
 }

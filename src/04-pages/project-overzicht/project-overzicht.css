@@ -1,0 +1,32 @@
+.project-pagina-overzicht {
+
+    & .pp-menu {
+        margin-bottom: 60px;
+    }
+
+    & .wrap {
+        position: relative;
+        z-index: 2;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        .collectie-tile a .content {
+            
+            & h2 {
+                margin-bottom: 0;
+            }
+
+            & .sub-title {
+                text-transform: uppercase;
+                color: #888888;
+                font-size: 14px;
+            }
+        }
+    }
+
+    & .pp-pagination {
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+}
