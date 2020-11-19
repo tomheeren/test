@@ -115,6 +115,7 @@ h6 {
     font-family: var(--heading-font-family);
     font-weight: 500;
     letter-spacing: .1em;
+    line-height: 1.2;
 }
 
 .orange-text {
@@ -145,20 +146,20 @@ h6 {
     }
     
     .super-heading {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .default-heading {
-        font-size: 46px;
+        font-size: 41px;
         line-height: 1.2;
-        margin: 0 0 30px;
+        margin: 0 0 27px;
     }
     
     .default-content {
-        margin-left: 40px;
+        margin-left: 34px;
     
         & p {
-            margin: 0 0 30px;
+            margin: 0 0 27px;
         }
     }
 }
@@ -168,19 +169,19 @@ h6 {
     }
     
     .super-heading {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .default-heading {
-        font-size: 56px;
-        margin: 0 0 40px;
+        font-size: 46px;
+        margin: 0 0 30px;
     }
     
     .default-content {
-        margin-left: 50px;
+        margin-left: 40px;
     
         & p {
-            margin: 0 0 40px;
+            margin: 0 0 30px;
         }
     }
 }

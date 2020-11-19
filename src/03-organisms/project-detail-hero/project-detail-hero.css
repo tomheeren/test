@@ -1,0 +1,132 @@
+.project-detail-pagina-hero {
+    margin: 0;
+
+    & .wrap {
+        display: flex;
+        flex-direction: column;
+    
+        & .images {
+            width: 100%;
+
+            & figure {
+                height: 100%;
+
+                & img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        & .content {
+            width: 100%;
+            background-color: var(--color-light-green);
+            padding: 40px 30px;
+
+            & .content-wrapper {
+                max-width: var(--container-max-width-ms);
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media (--viewport-sm-min) {
+    .project-detail-pagina-hero  .wrap .content .content-wrapper {
+        max-width: var(--container-max-width-sm);
+    }
+}
+
+@media (--viewport-md-min) {
+    .project-detail-pagina-hero {
+  
+        & .wrap {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                background-color: var(--color-light-green);
+                width: calc(((55% - 80px) / 2 ) + 45%);
+                height: 100%;
+            }
+        
+            & .images {
+                position: relative;
+                z-index: 3;
+                width: 55%;
+                padding: 80px 0 80px 80px;
+            }
+
+            & .content {
+                position: relative;
+                z-index: 3;
+                width: 45%;
+                padding: 100px 30px;
+
+                & .content-wrapper {
+                    max-width: unset;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-lg-min) {
+    .project-detail-pagina-hero {
+  
+        & .wrap {
+
+            &::after {
+                width: calc(((60% - 120px) / 2 ) + 40%);
+            }
+    
+            & .images {
+                width: 60%;
+                padding: 120px 0 120px 120px;
+      
+                & .carousel-nav.carousel {
+                    padding: 20px;
+                }
+            }
+      
+            & .content {
+                width: 40%;
+                padding: 120px 60px;
+            }
+        }
+    }
+}
+
+@media (--viewport-xl-min) {
+    .project-detail-pagina-hero {
+  
+        & .wrap {
+
+            &::after {
+                width: calc(((60% - 200px) / 2 ) + 40%);
+            }
+
+            & .images {
+                padding: 200px 0 200px 200px;
+
+                & img {
+                    max-width: 1200px;
+                }
+            }
+  
+            & .content {
+                padding: 140px 110px;
+                max-width: 840px;
+            }
+        }
+    }
+}

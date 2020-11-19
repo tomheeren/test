@@ -246,6 +246,10 @@ section {
 }
 
 @media (--viewport-ms-min) {
+    .container {
+        max-width: var(--container-max-width-ms);
+    }
+
     .col-ms,
     .col-ms-1,
     .col-ms-2,
@@ -436,6 +440,10 @@ section {
 }
 
 @media (--viewport-sm-min) {
+    .container {
+        max-width: var(--container-max-width-sm);
+    }
+
     .col-sm,
     .col-sm-1,
     .col-sm-2,
@@ -629,6 +637,10 @@ section {
     section {
         margin-top: calc(var(--grid-section-margin) * 8);
         margin-bottom: calc(var(--grid-section-margin) * 8);
+    }
+
+    .container {
+        max-width: var(--container-max-width-md);
     }
 
     .col-md,
@@ -825,6 +837,11 @@ section {
         margin-top: calc(var(--grid-section-margin) * 12);
         margin-bottom: calc(var(--grid-section-margin) * 12);
     }
+    
+    .container {
+        max-width: var(--container-max-width-lg);
+    }
+
     .col-lg,
     .col-lg-1,
     .col-lg-2,
@@ -1011,5 +1028,23 @@ section {
 
     .last-lg {
         order: 1;
+    }
+}
+
+@media (--viewport-xl-min) {
+
+    .container {
+        max-width: var(--container-max-width-xl);
+    }
+}
+
+@media (--viewport-xxl-min) {
+    section {
+        margin-top: calc(var(--grid-section-margin) * 14);
+        margin-bottom: calc(var(--grid-section-margin) * 14);
+    }
+
+    .container {
+        max-width: var(--container-max-width-xxl);
     }
 }

@@ -30,18 +30,21 @@
 @import '../02-molecules/module-youtube/module-youtube.css';
 
 /* Organism */
+/* Algemeen */
 @import '../03-organisms/footer/footer.css';
 @import '../03-organisms/header/header.css';
-@import '../03-organisms/section-hero/section-hero.css';
-@import '../03-organisms/section-page-title/section-page-title.css';
-@import '../03-organisms/image-text/image-text.css';
-@import '../03-organisms/ar-section-home/ar-section-home.css';
-@import '../03-organisms/jess-slider/jess-slider.css';
-@import '../03-organisms/home-projecten-showcase/home-projecten-showcase.css';
-@import '../03-organisms/cta-big/cta-big.css';
-@import '../03-organisms/overzicht-page-title/overzicht-page-title.css';
-@import '../03-organisms/product-pagina-hero/product-pagina-hero.css';
 @import '../03-organisms/page-hero/page-hero.css';
+@import '../03-organisms/section-page-title/section-page-title.css';
+@import '../03-organisms/overzicht-page-title/overzicht-page-title.css';
+@import '../03-organisms/cta-big/cta-big.css';
+@import '../03-organisms/image-text/image-text.css';
+@import '../03-organisms/jess-slider/jess-slider.css';
+@import '../03-organisms/section-hero/section-hero.css';
+@import '../03-organisms/ar-section-home/ar-section-home.css';
+@import '../03-organisms/home-projecten-showcase/home-projecten-showcase.css';
+@import '../03-organisms/product-pagina-hero/product-pagina-hero.css';
+@import '../03-organisms/project-detail-hero/project-detail-hero.css';
+@import '../03-organisms/project-image-gallery/project-image-gallery.css';
 
 /* Pages */
 @import '../04-pages/collectie-overzicht/collectie-overzicht.css';
@@ -51,3 +54,6 @@
 @import '../04-pages/project-overzicht/project-overzicht.css';
 @import '../04-pages/project-detail-pagina/project-detail-pagina.css';
 @import '../04-pages/blog-overzicht/blog-overzicht.css';
+@import '../04-pages/blog-detail/blog-detail.css';
+@import '../04-pages/contact/contact.css';
+

@@ -104,10 +104,33 @@
     .home-projecten-showcase {
 
         & .wrap {
-    
+        
+            & .content {
+                padding: 20px 40px 20px 100px;
+            }
+        }
+    }
+}
+
+@media (--viewport-xl-min) {
+    .home-projecten-showcase {
+
+        & .wrap {
+        
+            & .content {
+                padding: 20px 40px 20px 120px;
+            }
+        }
+    }
+}
+
+@media (--viewport-xxl-min) {
+    .home-projecten-showcase {
+
+        & .wrap {
+        
             & .content {
                 padding: 20px 40px 20px 160px;
-    
             }
         }
     }

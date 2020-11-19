@@ -54,7 +54,7 @@
 
     /* Layout
   ********************/
-    --site-width: 1560px;
+    --site-width: 1460px;
     --site-padding: 30px;
     --border-radius: 0;
 
@@ -147,6 +147,14 @@
     --container-max-width-md: 960px;
     --container-max-width-lg: 1140px;
     --container-max-width-xl: 1352px;
+    --container-max-width-xxl: 1560px;
+
+    /* --container-max-width-ms: 540px;
+    --container-max-width-sm: 690px;
+    --container-max-width-md: 820px;
+    --container-max-width-lg: 1080px;
+    --container-max-width-xl: 1302px;
+    --container-max-width-xxl: 1500px; */
 }
 
 /* Root end */
@@ -171,5 +179,10 @@
 @custom-media --viewport-lg-min (min-width: 1200px);
 @custom-media --viewport-lg-max (max-width: 1399px);
 
-/* X Large screen / X wide desktop */
+/* Xxl Large screen / Xxl wide desktop */
 @custom-media --viewport-xl-min (min-width: 1400px);
+@custom-media --viewport-xl-max (max-width: 1599px);
+
+
+/* Xxl Large screen / Xxl wide desktop */
+@custom-media --viewport-xxl-min (min-width: 1600px);

@@ -1,2 +1,7 @@
-.contact {
+.contact-map {
+    margin: 0;
+    
+    & iframe {
+        display: block;
+    }
 }

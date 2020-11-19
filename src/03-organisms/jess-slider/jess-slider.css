@@ -2,6 +2,7 @@
     margin: 0;
     background-color: var(--color-light-green);
     padding: 60px 0 40px;
+    overflow: hidden;
 
     &.js-background-white {
         background-color: var(--color-white);
@@ -14,6 +15,8 @@
     & .js-wrap {
         display: flex;
         flex-direction: column;
+
+        margin: 0 auto;
 
         & .js-content {
             margin: 0 var(--half-gutter-width) 40px;
@@ -38,8 +41,46 @@
 
             & .js-carousel {
 
+                & .flickity-viewport {
+                    overflow: visible;
+                }
+
                 .js-carousel-cell {
                     width: 90%;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-ms-min) {
+    .jess-slider .js-wrap {
+        max-width: var(--container-max-width-ms);
+
+        & .slider {
+
+            & .js-carousel {
+
+                .js-carousel-cell {
+                    width: 75%;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-sm-min) {
+    .jess-slider .js-wrap {
+        max-width: var(--container-max-width-sm);
+
+        & .slider {
+
+            & .js-carousel {
+
+                .js-carousel-cell {
+                    width: 60%;
                     padding-right: 20px;
                 }
             }
@@ -54,7 +95,8 @@
         & .js-wrap {
             flex-direction: row;
             align-items: center;
-            /* margin-left: calc((100% - 1500px) / 2); */
+            margin-left: calc((100% - var(--container-max-width-md)) / 2);
+            max-width: unset;
     
             & .js-content {
                 width: 420px;
@@ -68,8 +110,9 @@
                 & .js-buttons {
                     display: flex;
                     justify-content: flex-end;
-                    /* margin-right: calc((100vw - 1500px) / 2); */
-                    margin-right: var(--half-gutter-width);
+                    /* margin-right: calc((100vw - 1400px) / 2); */
+                    margin-right: calc((100vw - var(--container-max-width-md)) / 2);
+                    padding-right: 20px;
     
                     & .js-button {
                         margin: 0 0 20px 20px;
@@ -89,6 +132,10 @@
                 }
     
                 & .js-carousel {
+
+                    & .flickity-viewport {
+                        overflow: hidden;
+                    }
     
                     .js-carousel-cell {
                         width: 420px;
@@ -107,8 +154,9 @@
         & .js-wrap {
             /* flex-direction: row; */
             /* align-items: center; */
-            /* margin-left: calc((100% - 1500px) / 2); */
-            margin-left: var(--half-gutter-width);
+            /* margin-left: calc((100% - 1400px) / 2); */
+            margin-left: calc((100% - var(--container-max-width-lg)) / 2);
+            /* margin-left: var(--half-gutter-width); */
     
             & .js-content {
                 width: 520px;
@@ -122,7 +170,8 @@
                 & .js-buttons {
                     /* display: flex; */
                     /* justify-content: flex-end; */
-                    /* margin-right: calc((100vw - 1500px) / 2); */
+                    /* margin-right: calc((100vw - 1400px) / 2); */
+                    margin-right: calc((100vw - var(--container-max-width-lg)) / 2);
                 }
     
                 & .js-carousel {
@@ -137,18 +186,50 @@
     }
 }
 
-@media (min-width: 1540px) {
+@media (--viewport-xl-min) {
     .jess-slider {
     
         & .js-wrap {
-            margin-left: calc((100% - 1500px) / 2);
+            margin-left: calc((100% - var(--container-max-width-xl)) / 2);
     
             & .slider {
     
                 & .js-buttons {
-                    margin-right: calc((100vw - 1500px) / 2);
+                    margin-right: calc((100vw - var(--container-max-width-xl)) / 2);
                 }
             }
         }
     }
 }
+
+@media (--viewport-xxl-min) {
+    .jess-slider {
+    
+        & .js-wrap {
+            margin-left: calc((100% - var(--container-max-width-xxl)) / 2);
+    
+            & .slider {
+    
+                & .js-buttons {
+                    margin-right: calc((100vw - var(--container-max-width-xxl)) / 2);
+                }
+            }
+        }
+    }
+}
+
+/* @media (min-width: 1540px) {
+    .jess-slider {
+    
+        & .js-wrap {
+            margin-left: calc((100% - 1400px) / 2);
+    
+            & .slider {
+    
+                & .js-buttons {
+                    margin-right: calc((100vw - 1400px) / 2);
+                }
+            }
+        }
+    }
+} */
