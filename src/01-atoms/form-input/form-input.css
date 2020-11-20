@@ -8,7 +8,7 @@ input {
     margin-bottom: 12px;
     background-color: var(--input-background-color);
     font-family: var(--base-font-family);
-    transition: .2s;
+    transition: padding .2s;
 
     &:focus {
         /* outline-color : var(--color-orange) !important; */
@@ -228,7 +228,7 @@ label {
         font-family: var(--base-font-family);
         background-image: none;
         -webkit-appearance: none;
-        transition: .2s;
+        transition: padding .2s;
 
         &:focus {
             outline: none !important;
@@ -252,7 +252,7 @@ textarea {
     margin-bottom: 12px;
     background-color: var(--input-background-color);
     font-family: var(--base-font-family);
-    transition: .2s;
+    transition: padding .2s;
 
     &:focus {
         /* outline-color : var(--color-orange) !important; */

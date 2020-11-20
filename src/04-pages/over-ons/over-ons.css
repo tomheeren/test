@@ -1,0 +1,252 @@
+.video-intro {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    & .video-intro-wrap {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+
+        & iframe {
+            position: absolute;
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+}
+
+.about-icon-text {
+    margin: 0 0px;
+
+    & .content {
+        text-align: center;
+        
+        & img {
+            height: 36px;
+            width: auto;
+        }
+
+        & h2 {
+            font-size: 32px;
+            margin: 32px 0 22px;
+        }
+    }
+}
+
+.about-team-section {
+    margin: 0;
+    background-color: var(--color-gray-light);
+    padding: 40px 0;
+
+    & .at-team {
+        margin-bottom: 40px;
+
+        & .at-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+
+            & .about-team-tile {
+                width: 50%;
+                padding: 0 10px;
+                margin-bottom: 30px;
+    
+                & .content {
+        
+                    & h3 {
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                    }
+        
+                    & span {
+                        text-transform: uppercase;
+                        color: #888888;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .at-sales {
+
+        & .at-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+
+            & .about-sales-tile {
+                width: 100%;
+                padding: 0 10px;
+                margin-bottom: 30px;
+                word-break: break-word;
+
+                & .ats-area {
+                    display: block;
+                    text-transform: uppercase;
+                    color: #888888;
+                    font-size: 16px;
+                }
+
+                & h3 {
+                    font-size: 20px;
+                    margin: 4px 0 8px;
+                }
+
+                & .ats-phone {
+                    display: block;
+                    font-size: 15px;
+
+                }
+
+                & .ats-mail {
+                    display: block;
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-sm-min) {
+    .about-icon-text {
+        margin: 0 100px;
+    }
+
+    .about-team-section {
+        padding: 80px 0;
+
+        & .at-team {
+            margin-bottom: 60px;
+            
+            & .at-wrap {
+                margin: 0 -15px;
+    
+                & .about-team-tile {
+                    padding: 0 15px;
+                    width: calc(100% / 3);
+                    margin-bottom: 40px;
+            
+                    & .content {
+            
+                        & h3 {
+                            font-size: 24px;
+                        }
+            
+                        & span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .at-sales {
+
+            & .at-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+    
+                & .about-sales-tile {
+                    padding: 0 15px;
+                    width: 50%;
+                    margin-bottom: 40px;
+    
+                    & .ats-area {
+                        font-size: 16px;
+                    }
+    
+                    & h3 {
+                        font-size: 24px;
+                    }
+    
+                    & .ats-phone {
+                        font-size: 15px;
+    
+                    }
+    
+                    & .ats-mail {
+                        font-size: 15px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-md-min) {
+    .about-icon-text {
+        margin: 0 20px;
+    }
+
+    .about-team-section {
+        padding: 120px 0;
+
+        & .at-team {
+            margin-bottom: 80px;
+
+            & .at-wrap {
+                margin: 0 -20px;
+    
+                & .about-team-tile {
+                    padding: 0 20px;
+                    margin-bottom: 60px;
+                    width: 25%;
+            
+                    & .content {
+            
+                        & h3 {
+                            font-size: 28px;
+                        }
+            
+                        & span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .at-sales {
+
+            & .at-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -20px;
+    
+                & .about-sales-tile {
+                    padding: 0 20px;
+                    margin-bottom: 60px;
+                    width: calc(100% / 3);
+    
+                    & .ats-area {
+                        font-size: 17px;
+                    }
+    
+                    & h3 {
+                        font-size: 28px;
+                    }
+    
+                    & .ats-phone {
+                        font-size: 16px;
+    
+                    }
+    
+                    & .ats-mail {
+                        font-size: 16px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (--viewport-lg-min) {
+    .about-icon-text {
+        margin: 0 40px;
+    }
+}
